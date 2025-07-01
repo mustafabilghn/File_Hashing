@@ -2,7 +2,7 @@
 
 This project demonstrates file hashing in C++ across 4 versions, improving performance through multithreading and pipelining.
 
-## Test File Image
+## Test File Image(500.000+ Files)
 ![TestFile](test_files.png)
 
 ## Versions
