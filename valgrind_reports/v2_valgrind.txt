@@ -1,0 +1,32 @@
+==5459== Memcheck, a memory error detector
+==5459== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==5459== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==5459== Command: ./run test_files
+==5459== 
+==5459== 
+==5459== Process terminating with default action of signal 27 (SIGPROF)
+==5459==    at 0x4C348B2: __open_nocancel (open64_nocancel.c:39)
+==5459==    by 0x4C4485F: write_gmon (gmon.c:393)
+==5459==    by 0x4C4520A: _mcleanup (gmon.c:467)
+==5459==    by 0x4B5F381: __cxa_finalize (cxa_finalize.c:82)
+==5459==    by 0x10C256: ??? (in /home/mustafa-bilgehan/Project/run)
+==5459==    by 0x40010F1: _dl_call_fini (dl-call_fini.c:43)
+==5459==    by 0x4005577: _dl_fini (dl-fini.c:114)
+==5459==    by 0x4B5FA75: __run_exit_handlers (exit.c:108)
+==5459==    by 0x4B5FBBD: exit (exit.c:138)
+==5459==    by 0x4B421D0: (below main) (libc_start_call_main.h:74)
+==5459== 
+==5459== HEAP SUMMARY:
+==5459==     in use at exit: 121,824 bytes in 7 blocks
+==5459==   total heap usage: 6,480,362 allocs, 6,480,355 frees, 6,060,459,569 bytes allocated
+==5459== 
+==5459== LEAK SUMMARY:
+==5459==    definitely lost: 0 bytes in 0 blocks
+==5459==    indirectly lost: 0 bytes in 0 blocks
+==5459==      possibly lost: 1,216 bytes in 4 blocks
+==5459==    still reachable: 120,608 bytes in 3 blocks
+==5459==         suppressed: 0 bytes in 0 blocks
+==5459== Rerun with --leak-check=full to see details of leaked memory
+==5459== 
+==5459== For lists of detected and suppressed errors, rerun with: -s
+==5459== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
