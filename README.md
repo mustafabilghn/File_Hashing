@@ -2,6 +2,9 @@
 
 This project demonstrates file hashing in C++ across 4 versions, improving performance through multithreading and pipelining.
 
+## Test File Image
+![TestFile](test_files.png)
+
 ## Versions
 - V1: Basic single-threaded
 - V2: Multi-threaded version
